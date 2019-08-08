@@ -1,0 +1,28 @@
+#box{
+	border: 8px grey;
+	width: 80%;
+	height: 60%;
+	padding: 5%;
+	border-style: outset;
+	border-radius: 5px;
+	background-image: url("bg.jpg");
+        background-size: 100%;
+}
+.inner{
+border: 5px outset grey;
+width: 25%;
+height: 25%;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 20px;
+}
+
+.button{
+	border-radius: 10px;
+	width: 160px;
+	background-color: transparent;
+	border: 2px solid black;
+	padding: 5px;
+}
