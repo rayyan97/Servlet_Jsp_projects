@@ -13,16 +13,17 @@ import java.sql.Statement;
 
 public class DAO {
     
-    String url="jdbc:mysql://Localhost:3306/mydb";
+    String url="jdbc:mysql://Localhost:3306/";
+    String dbname = "";
     String name="root";
-    String dbpass="9082372584";
+    String dbpass="";
     String query = "select * from Login where Email = ? and password = ? ";
     
     public boolean check(String uname,String pass) throws Exception{
         String email = uname;
         String passwd= pass;
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection(url,name,dbpass);
+        Connection con = DriverManager.getConnection(url+dbname,name,dbpass);
         PreparedStatement smt = con.prepareStatement(query);
        smt.setString(1, email);
        smt.setString(2,passwd);
