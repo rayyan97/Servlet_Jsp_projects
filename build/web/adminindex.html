@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<script type="text/javascript" src="js/modification.js"></script>
+	<link  rel="stylesheet" href="css/newcss.css" >
+</head>
+<body>
+	
+	<center><h1 >Admin Login</h1></center>
+	<center><div id="box"><img src="icons/login.png">
+<form name="myform" onsubmit="return validation();" action="admincheck" method="post">
+
+	<img id = " id1" src="icons/Email.png"><input type="text" id="u1" name="uname"  placeholder =" Enter Admin username:"><label id="lbl1" style="color: red;visibility: hidden;">&nbsp; Invalid username</label><br><br>
+	<img id = " id2" src="icons/key.png"><input type="password" id="u2" name="pass"  placeholder="Enter Admin Password:"><label id="lbl2" style="color: red;visibility: hidden;">&nbsp; Invalid password</label><br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp; <input class="button" type="submit" value="Login" id="btn1"><br><br>
+        </form>
+             
+               <form action="Logout1" method="post">
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Logout" class="button">
+        </form>   
+          
+	</div>
+            
+	</center>
+
+</body>
+</html>
