@@ -37,7 +37,7 @@ public class admincheck extends HttpServlet {
              String password = request.getParameter("pass");
               session.setAttribute("n",admin);
          
-           if(admin.equals("ray9167086870@gmail.com") && password.equals("ray123")){
+           if(admin.equals("admin") && password.equals("admin")){
                
             response.sendRedirect("up_page.jsp");
             
