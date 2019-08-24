@@ -44,9 +44,10 @@ public class forgetpass extends HttpServlet {
               String password = request.getParameter("pass");
         try {
           
-            String url="jdbc:mysql://Localhost:3306/mydb";
-            String dbname="root";
-            String dbpass="9082372584";
+            String url="jdbc:mysql://Localhost:3306/";
+            String user = "root";
+            String dbname="";
+            String dbpass="";
             String query="update Login set password=? where Email = '"+name+"'";
            
             
@@ -54,7 +55,7 @@ public class forgetpass extends HttpServlet {
             String query2="select * from Login where Email = '"+name+"'";
            
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(url,dbname,dbpass);
+            Connection con = DriverManager.getConnection(url+dbname,user,dbpass);
            Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(query2);
             boolean val = rs.first();
