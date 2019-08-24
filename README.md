@@ -3,6 +3,7 @@ This is my first attempt to create jsp/servlet project with mysql . it's a simpl
 for this project you need to add 2 connectors in your libraries folder of your project in "Netbeans"
 1. mysql-connector-java-5.1.41
 2. jstl-1.2
+(both connectors are provided)
 and you also need to create 2 tables for it.
 
 1. first table in mysql
